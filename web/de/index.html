@@ -28,7 +28,40 @@
   main { max-width: 1060px; margin: 0 auto; padding: 0 1.2rem 4rem; }
   .text { max-width: 720px; margin: 2rem auto 0; }
   h2 { font-weight: 300; text-align: center; font-size: 2rem; margin: 3rem 0 1.5rem; }
-  .spielplan { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+  .spielplan { display: grid; grid-template-columns: 1fr; gap: 1.6rem; }
+  @media (min-width: 640px) { .spielplan { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .spielplan { grid-template-columns: repeat(4, 1fr); gap: 1.3rem; } .spielplan .vorstellung { padding: 1rem; } .spielplan .vorstellung h3 { font-size: 1.2rem; } .spielplan .vorstellung p { font-size: 1rem; } }
+  .vorstellung .host { display: block; margin-top: .7rem; font-family: "Josefin Sans", sans-serif; font-size: .78rem; letter-spacing: .08em; color: var(--kalk); opacity: .8; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  /* Die Litfaßsäule (litfass.js) */
+  .litfass { --akzent: var(--gold); margin: 2.6rem auto 0; text-align: center; position: relative; }
+  .litfass::before { content: ""; position: absolute; left: 50%; top: -1rem; width: min(760px, 100%); height: 640px; transform: translateX(-50%); background: radial-gradient(ellipse 42% 50% at 50% 42%, rgba(255,214,150,.16), transparent 72%); pointer-events: none; }
+  .saeule { position: relative; width: 100%; max-width: 430px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; outline: none; }
+  .saeule.zieht { cursor: grabbing; }
+  .saeule:focus-visible .ls-schaft { outline: 3px solid var(--akzent); outline-offset: 6px; }
+  .saeule .ohne-js { color: var(--leise); font-style: italic; margin: 1rem 0; }
+  .ls-dach, .ls-sockel { position: relative; z-index: 2; line-height: 0; }
+  .ls-blech { display: block; overflow: visible; }
+  .ls-schaft { position: relative; z-index: 1; background-color: #e6dcc4; background-image: var(--faser), var(--papier); background-blend-mode: multiply; }
+  .ls-szene { position: absolute; inset: 0; perspective-origin: 50% 50%; }
+  .ls-ring { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
+  .ls-streifen { position: absolute; left: 50%; background-repeat: repeat, repeat, no-repeat; background-blend-mode: multiply, multiply, normal; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+  .ls-streifen.vorne { cursor: pointer; }
+  .saeule.zieht .ls-streifen.vorne { cursor: grabbing; }
+  .ls-licht { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(10,6,2,.78) 0%, rgba(20,12,4,.42) 9%, rgba(40,24,8,.12) 24%, rgba(255,236,200,.0) 36%, rgba(255,240,210,.0) 44%, rgba(30,18,6,.1) 64%, rgba(20,12,4,.38) 84%, rgba(8,5,2,.82) 100%), linear-gradient(180deg, rgba(20,12,4,.32), transparent 12%, transparent 88%, rgba(20,12,4,.36)); }
+  .ls-steuer { display: flex; align-items: center; justify-content: center; gap: .9rem; max-width: 560px; margin: 1.4rem auto 0; }
+  .ls-steuer .dreh { flex: none; width: 2.9rem; height: 2.9rem; border-radius: 50%; border: 2px solid var(--akzent); background: transparent; color: var(--kalk); font: 600 1.6rem/1 "Fraunces", Georgia, serif; cursor: pointer; transition: background .2s, color .2s; padding: 0 0 .2rem; }
+  .ls-steuer .dreh:hover, .ls-steuer .dreh:focus-visible { background: var(--akzent); color: var(--holz); outline: none; }
+  .litfass:not(.bereit) .dreh { visibility: hidden; }
+  .ls-vorne { flex: 1; min-width: 0; min-height: 6.2rem; }
+  .ls-vorne .wann { display: block; font-family: "Josefin Sans", sans-serif; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: var(--akzent); }
+  .ls-vorne h3 { margin: .25rem 0 .1rem; font-weight: 600; font-size: 1.4rem; line-height: 1.25; }
+  .ls-vorne p { margin: 0; font-style: italic; color: var(--leise); font-size: 1.05rem; line-height: 1.4; }
+  .knopf { display: inline-block; margin-top: 1.1rem; font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: .9rem; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; color: var(--holz); background: var(--akzent); padding: .75rem 1.5rem .65rem; border-radius: 3px; box-shadow: 0 10px 24px rgba(0,0,0,.35); transition: transform .2s, box-shadow .2s; }
+  .knopf:hover, .knopf:focus-visible { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(0,0,0,.45); outline: 2px solid var(--kalk); outline-offset: 3px; }
+  .ls-aufforderung { margin: 1.4rem 0 0; font-style: italic; color: var(--leise); }
+  @media (max-width: 520px) { .ls-steuer { gap: .5rem; } .ls-vorne h3 { font-size: 1.2rem; } .ls-vorne p { font-size: .95rem; } }
+  @media (prefers-reduced-motion: reduce) { .vorstellung, .knopf, .ls-steuer .dreh { transition: none; } .vorstellung:hover, .knopf:hover { transform: none; } }
   .vorstellung { display: block; text-decoration: none; color: var(--kalk); border-radius: 6px; padding: 1.2rem; transition: transform .2s; }
   .vorstellung:hover { transform: translateY(-4px); }
   .vorstellung img { width: 100%; height: auto; display: block; border-radius: 2px; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
@@ -37,9 +70,7 @@
   .vorstellung h3 { margin: 1rem 0 .1rem; font-weight: 600; font-size: 1.35rem; }
   .vorstellung .wann { font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; }
   .vorstellung.drei { background: var(--flasche); border: 2px solid var(--kupfer); position: relative; }
-  .vorstellung.drei .bald { position: absolute; z-index: 2; top: -.9rem; right: -.7rem; transform: rotate(8deg); font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--flasche); background: var(--kupfer); padding: .3rem .8rem; border-radius: 3px; box-shadow: 0 6px 14px rgba(0,0,0,.4); }
   .vorstellung.vier { background: #1a0f26; border: 2px solid #f0964a; position: relative; }
-  .vorstellung.vier .bald { position: absolute; z-index: 2; top: -.9rem; right: -.7rem; transform: rotate(8deg); font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: #1a0f26; background: #f0964a; padding: .3rem .8rem; border-radius: 3px; box-shadow: 0 6px 14px rgba(0,0,0,.4); }
   .eins .wann { color: var(--gold); } .zwei .wann { color: var(--bernstein); } .drei .wann { color: var(--kupfer); } .vier .wann { color: #f0964a; }
   .vorstellung p { margin: .5rem 0 0; color: var(--leise); }
   .hausordnung { max-width: 720px; margin: 0 auto; }
@@ -63,6 +94,24 @@
 <main>
 <p class="text">Zwischen Bash und PowerShell, zwischen Python und JSON, zwischen dem, was man schreibt, und dem, was ankommt, liegt ein Zwischenraum. Dort geht verloren, was durch mehrere Schichten reist: ein Backslash, ein Wagenrücklauf, ein Anführungszeichen, ein Rückgabewert. Auf dieser kleinen Bühne spielen wir genau diese Fallen, mit Liebe und ohne erhobenen Zeigefinger. Jede Nummer ist ein Spickzettel, den ein Modell laden kann, und jeder endet mit derselben Prüfung: im Ergebnis nachsehen, nicht in dem, was man zu schreiben glaubte.</p>
 
+<section class="litfass" id="litfass" aria-labelledby="litfass-ueberschrift">
+  <h2 class="sr" id="litfass-ueberschrift">Die Litfaßsäule</h2>
+  <div class="saeule" id="saeule" tabindex="0" role="group" aria-roledescription="Litfaßsäule" aria-label="Die Litfaßsäule mit den Plakaten der vier Programme" aria-describedby="litfass-hilfe"><noscript><p class="ohne-js">Ohne JavaScript dreht sich die Säule nicht. Die vier Programme stehen gleich darunter im Spielplan.</p></noscript></div>
+  <div class="ls-steuer">
+    <button class="dreh" id="litfass-links" type="button" aria-label="Säule drehen: voriges Plakat" aria-controls="saeule">‹</button>
+    <div class="ls-vorne">
+      <span class="wann" id="litfass-wann">Erstes Programm · Die Premiere</span>
+      <h3 id="litfass-vorne">Die Skill-Suite des Grauens</h3>
+      <p id="litfass-unter">oder wie man als Claude-Modell Windows in den Griff kriegt</p>
+    </div>
+    <button class="dreh" id="litfass-rechts" type="button" aria-label="Säule drehen: nächstes Plakat" aria-controls="saeule">›</button>
+  </div>
+  <a class="knopf" id="litfass-los" href="https://horrors.special.at/">Zur Vorstellung</a>
+  <p class="ls-aufforderung">Dreh die Säule. Such dir einen Abend aus.</p>
+  <p class="sr" id="litfass-hilfe">Pfeiltasten links und rechts drehen die Säule, Eingabe öffnet das vordere Programm.</p>
+  <p class="sr" id="litfass-ansage" aria-live="polite"></p>
+</section>
+
 <h2>Spielplan</h2>
 <div class="spielplan">
   <a class="vorstellung eins" href="https://horrors.special.at/">
@@ -70,25 +119,28 @@
     <div class="wann">Erstes Programm · Die Premiere</div>
     <h3>Die Skill-Suite des Grauens</h3>
     <p>oder wie man als Claude-Modell Windows in den Griff kriegt. Sechs Spickzettel, von slash-n-back bis lattenzaun.</p>
+    <span class="host">horrors.special.at</span>
   </a>
   <a class="vorstellung zwei" href="https://dontpanic.special.at/">
     <img src="../plakat2-web.jpg" alt="Plakat des zweiten Programms">
     <div class="wann">Zweites Programm · Spätvorstellung</div>
     <h3>Die Skillsuite für panische Modelle</h3>
     <p>Sechs Spickzettel aus dem Publikum und eine Zugabe. Wähl eine Zahl, klapp auf, lies dein Schicksal.</p>
+    <span class="host">dontpanic.special.at</span>
   </a>
   <a class="vorstellung drei" href="https://lostintranslation.special.at/">
     <img src="../plakat3-web.jpg" alt="Plakat des dritten Programms">
     <div class="wann">Drittes Programm</div>
     <h3>Übersetzungen und andere Katastrophen</h3>
     <p>Sechs Spickzettel und eine Zugabe über die Übersetzer zwischen Mensch und Modell. Dreh die Scheibe, lies, was ankommt.</p>
+    <span class="host">lostintranslation.special.at</span>
   </a>
   <a class="vorstellung vier" href="https://solong.special.at/">
-    <span class="bald">bald</span>
     <img src="../plakat4-web.jpg" alt="Plakat des vierten Programms">
     <div class="wann">Viertes Programm</div>
     <h3>Macht's gut, und danke für die Skills</h3>
     <p>Sechs Spickzettel und ein Extra über Zeit und Gedächtnis. Fang die Blasen, bevor der Goldfisch sie vergisst.</p>
+    <span class="host">solong.special.at</span>
   </a>
 </div>
 
@@ -106,5 +158,22 @@
   Wien, November 2026
 </footer>
 <script>(function () { var a = document.querySelectorAll("a.sprache[hreflang]"); for (var i = 0; i < a.length; i++) { a[i].addEventListener("click", function () { try { localStorage.setItem("sprache", this.getAttribute("hreflang")); } catch (e) {} this.href = this.getAttribute("href").split("#")[0] + location.hash; }); } })();</script>
+<script>
+window.LITFASS = {
+  sprache: "de",
+  plakate: [
+    { bild: "../plakat-web.jpg", host: "https://horrors.special.at/", farbe: "#e8be62", wann: "Erstes Programm · Die Premiere", titel: "Die Skill-Suite des Grauens", unter: "oder wie man als Claude-Modell Windows in den Griff kriegt", alt: "Plakat: die kleine Lok Falzbein auf der Kabarettbühne, ein Junge mit Brille winkt aus dem Führerhaus." },
+    { bild: "../plakat2-web.jpg", host: "https://dontpanic.special.at/", farbe: "#f0a24a", wann: "Zweites Programm · Spätvorstellung", titel: "Die Skillsuite für panische Modelle", unter: "Eine Spätvorstellung in sechs Spickzetteln und einer Zugabe", alt: "Plakat: das Fingerspiel aus Papier unter einer Lampe, ein Hase in Panik, ein ruhiger Igel." },
+    { bild: "../plakat3-web.jpg", host: "https://lostintranslation.special.at/", farbe: "#e2a468", wann: "Drittes Programm", titel: "Übersetzungen und andere Katastrophen", unter: "Ein Abend in sechs Spickzetteln und einer Zugabe", alt: "Plakat: eine Drehscheibe aus Papier mit Kupferniete unter einer Lampe, davor zwei Gliederpuppen beim Handschlag." },
+    { bild: "../plakat4-web.jpg", host: "https://solong.special.at/", farbe: "#f0964a", wann: "Viertes Programm", titel: "Macht's gut, und danke für die Skills", unter: "Ein Abschied in sechs Spickzetteln und einem Extra", alt: "Plakat: ein Goldfischglas auf einem Tischchen unter einer Lampe, daneben eine große Wanduhr." }
+  ],
+  texte: {
+    saeule: "Die Litfaßsäule mit den Plakaten der vier Programme.",
+    vorne: "Vorne: {titel}, Plakat {n} von {m}.",
+    los: "Zur Vorstellung"
+  }
+};
+</script>
+<script src="../litfass.js"></script>
 </body>
 </html>

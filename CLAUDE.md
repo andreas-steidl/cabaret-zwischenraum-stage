@@ -7,7 +7,7 @@ noch offen; technischer Name bleibt `suite-des-grauens`).
 Host: **https://zwischenraum.special.at/** (Inhalt von `web/`, flach hochgeladen).
 
 ## Ordner
-- `web/` – `index.html` (Sprachwähler), `de/index.html`, `en/index.html`, Signet, Favicons, Plakat-Webfassungen beider Spielzeiten.
+- `web/` – `index.html` (Sprachwähler), `de/index.html`, `en/index.html`, Signet, Favicons, Plakat-Webfassungen aller vier Spielzeiten, `litfass.js` (die Litfaßsäule: Plakate rundherum, drehen und einrasten; Daten in `window.LITFASS` auf jeder Sprachseite).
 - `skills/gesamt/suite-des-grauens/` – `SKILL.md` (englisch, von Hand, mit deutschem Teil) und `sheets/<englischer-name>.md`.
 - `skills/gesamt/gesamt_bauen.py` – erzeugt `sheets/` aus `../01-grauen/skills/en` und `../02-panik/skills/en`.
 - `doku/` – Veröffentlichung (`AN_MIRA_VEROEFFENTLICHEN.md`, Hosts), `ENGLISCH_UND_ZUSAMMENFUEHRUNG.md` (englische Namen, Aufbau des Gesamtskills), Satzung und Schriften an Falzbein, Antwort an Richtscheit, `VIERTE_SPIELZEIT.md` (Sammelmappe für später).
