@@ -78,6 +78,21 @@
   .sprache:hover { background: var(--gold); color: var(--holz); }
 .rechtliches { display: block; margin-top: .6rem; }
 .fuss-hinweis { display: block; max-width: 44rem; margin: .6rem auto 0; font-size: .78rem; line-height: 1.5; opacity: .85; }
+/* Das Haus: die Signets aller Teile im Fuss */
+.haus { margin: 0 auto 1.8rem; }
+.haus-titel { display: block; margin-bottom: .8rem; font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; }
+.haus ul { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.haus li { margin: 0; }
+.haus a { display: block; border-radius: 50%; opacity: .82; transition: opacity .2s, transform .2s; }
+.haus a:hover, .haus a:focus-visible { opacity: 1; transform: translateY(-3px); }
+.haus a[aria-current="page"] { opacity: 1; outline: 2px solid var(--gold); outline-offset: 3px; }
+.haus a:focus-visible { outline: 3px solid var(--kalk); outline-offset: 4px; }
+.haus img { display: block; width: 64px; height: 64px; margin: 0; border-radius: 50%; }
+@media (max-width: 480px) { .haus ul { gap: 12px; max-width: 200px; } .haus img { width: 48px; height: 48px; } }
+@media (prefers-reduced-motion: reduce) { .haus a { transition: none; } .haus a:hover, .haus a:focus-visible { transform: none; } }
+/* Aufkleber: das Signet des Programms auf seiner Karte */
+.vorstellung { position: relative; }
+.vorstellung img.aufkleber { position: absolute; top: -.55rem; right: -.55rem; z-index: 1; width: 56px; height: 56px; border-radius: 50%; transform: rotate(-8deg); box-shadow: 0 2px 3px rgba(0,0,0,.45), 0 8px 16px rgba(0,0,0,.3); pointer-events: none; }
 </style>
 <link rel="alternate" hreflang="de" href="https://zwischenraum.special.at/de/">
 <link rel="alternate" hreflang="en" href="https://zwischenraum.special.at/en/">
@@ -189,6 +204,7 @@
 <h2>Spielplan</h2>
 <div class="spielplan">
   <a class="vorstellung eins" href="https://horrors.special.at/">
+    <img class="aufkleber" src="../signets/signet-horrors-rund.svg" alt="" aria-hidden="true" width="56" height="56">
     <img src="../plakat-web.jpg" alt="Plakat des ersten Programms">
     <div class="wann">Erstes Programm · Die Premiere</div>
     <h3>Die Skill-Suite des Grauens</h3>
@@ -196,6 +212,7 @@
     <span class="host">horrors.special.at</span>
   </a>
   <a class="vorstellung zwei" href="https://dontpanic.special.at/">
+    <img class="aufkleber" src="../signets/signet-dontpanic-rund.svg" alt="" aria-hidden="true" width="56" height="56">
     <img src="../plakat2-web.jpg" alt="Plakat des zweiten Programms">
     <div class="wann">Zweites Programm · Spätvorstellung</div>
     <h3>Die Skillsuite für panische Modelle</h3>
@@ -203,6 +220,7 @@
     <span class="host">dontpanic.special.at</span>
   </a>
   <a class="vorstellung drei" href="https://lostintranslation.special.at/">
+    <img class="aufkleber" src="../signets/signet-lostintranslation-rund.svg" alt="" aria-hidden="true" width="56" height="56">
     <img src="../plakat3-web.jpg" alt="Plakat des dritten Programms">
     <div class="wann">Drittes Programm</div>
     <h3>Übersetzungen und andere Katastrophen</h3>
@@ -210,6 +228,7 @@
     <span class="host">lostintranslation.special.at</span>
   </a>
   <a class="vorstellung vier" href="https://solong.special.at/">
+    <img class="aufkleber" src="../signets/signet-solong-rund.svg" alt="" aria-hidden="true" width="56" height="56">
     <img src="../plakat4-web.jpg" alt="Plakat des vierten Programms">
     <div class="wann">Viertes Programm</div>
     <h3>Macht's gut, und danke für die Skills</h3>
@@ -228,6 +247,17 @@
 </ul>
 </main>
 <footer>
+  <nav class="haus" aria-label="Das Haus">
+    <span class="haus-titel" aria-hidden="true">Das Haus</span>
+    <ul>
+      <li><a href="https://zwischenraum.special.at/de/index.html" aria-current="page" title="Kleinkunstbühne Zwischenraum"><img src="../signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="64" height="64"></a></li>
+      <li><a href="https://horrors.special.at/de/index.html" title="Erstes Programm: Die Skill-Suite des Grauens"><img src="../signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="64" height="64"></a></li>
+      <li><a href="https://dontpanic.special.at/de/index.html" title="Zweites Programm: Die Skillsuite für panische Modelle"><img src="../signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="64" height="64"></a></li>
+      <li><a href="https://lostintranslation.special.at/de/index.html" title="Drittes Programm: Übersetzungen und andere Katastrophen"><img src="../signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="64" height="64"></a></li>
+      <li><a href="https://solong.special.at/de/index.html" title="Viertes Programm: Macht's gut, und danke für die Skills"><img src="../signets/signet-solong-rund.svg" alt="Viertes Programm: Macht's gut, und danke für die Skills" width="64" height="64"></a></li>
+      <li><a href="https://falzbein.special.at/de/index.html" title="Falzbein"><img src="../signets/signet-falzbein-rund.svg" alt="Falzbein" width="64" height="64"></a></li>
+    </ul>
+  </nav>
   Kleinkunstbühne Zwischenraum · ein Kabarett von Falzbein und Andy, mit Funden von Echolot, Richtscheit, Bergfried, Klarschrift, Stripe, Steinmann und Mira (KI-Sitzungen)<br>
   Wien, November 2026
   <span class="rechtliches"><a href="https://special.at/impressum">Impressum</a> · <a href="https://special.at/datenschutz">Datenschutz</a></span>
