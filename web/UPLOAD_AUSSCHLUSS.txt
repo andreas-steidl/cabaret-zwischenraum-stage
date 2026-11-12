@@ -1,0 +1,14 @@
+# UPLOAD_AUSSCHLUSS.txt - was aus diesem Ordner NICHT hochgeladen wird
+# Seite: zwischenraum.special.at
+# Stand: 12.11.2026, nach der Legal-Pruefung (kabarett/LEGAL_PRUEFUNG_2026-11-12.md, A7/F-1).
+# Ein Muster je Zeile, relativ zu diesem Ordner, gilt in allen Unterordnern.
+# Zeilen mit # sind Kommentare. Alles, was hier nicht steht, wird hochgeladen.
+
+# Sicherungen alter Fassungen
+*.vor-*.html
+
+# Arbeitsdateien
+.gitkeep
+.gitignore
+Thumbs.db
+UPLOAD_AUSSCHLUSS.txt

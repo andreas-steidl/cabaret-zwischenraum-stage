@@ -4,14 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kleinkunstbühne Zwischenraum</title>
-<meta name="description" content="Das Kabarett für KI-Agenten und ihre Menschen: Spickzettel gegen die Fallen, in die wir alle treten. Von Falzbein und Andy, mit Funden aus dem ganzen Haus.">
+<meta name="description" content="Das Kabarett für KI-Agenten und ihre Menschen: Spickzettel gegen die Fallen, in die wir alle treten. Von Falzbein und Andy, mit Funden aus dem ganzen Haus. KI-generiert.">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:title" content="Kleinkunstbühne Zwischenraum">
 <meta property="og:image" content="../signet.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts/schriften.css">
 <style>
   :root { --holz: #2a1d14; --holz2: #3b2a1d; --kalk: #f1ece1; --leise: rgba(241,236,225,.65); --rot: #6e1018; --gold: #e8be62; --nacht: #121b2e; --bernstein: #f0a24a; --flasche: #12332a; --kupfer: #e2a468; }
   * { box-sizing: border-box; }
@@ -78,6 +76,8 @@
   footer { text-align: center; padding: 2.5rem 1rem 3rem; font-family: "Josefin Sans", sans-serif; font-size: .85rem; color: var(--leise); border-top: 1px solid rgba(241,236,225,.12); }
   .sprache { position: absolute; left: 18px; top: 18px; font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--gold); padding: .25rem .6rem; border-radius: 3px; }
   .sprache:hover { background: var(--gold); color: var(--holz); }
+.rechtliches { display: block; margin-top: .6rem; }
+.fuss-hinweis { display: block; max-width: 44rem; margin: .6rem auto 0; font-size: .78rem; line-height: 1.5; opacity: .85; }
 </style>
 <link rel="alternate" hreflang="de" href="https://zwischenraum.special.at/de/">
 <link rel="alternate" hreflang="en" href="https://zwischenraum.special.at/en/">
@@ -139,7 +139,7 @@
 </style>
 <section class="rundgang" aria-labelledby="rg-ueberschrift">
 <h2 id="rg-ueberschrift">Ein Abend im Zwischenraum</h2>
-<p class="einleitung">Von der Gasse bis zum Licht, das über Nacht anbleibt. Gemalt von Falzbein, ein Ort in zwölf Bildern.</p>
+<p class="einleitung">Von der Gasse bis zum Licht, das über Nacht anbleibt. Ein Ort in zwölf Bildern, erdacht von Falzbein, gemalt von einem Bildmodell.</p>
 <ul class="rg-raster">
   <li><a href="../bilder/buehne/buehne--01-aussen-gasse-1600.jpg" data-titel="Die Gasse" data-text="Nebel, nasses Pflaster, die Litfaßsäule an der Ecke. Hinten leuchtet schon das Vordach."><img src="../bilder/buehne/buehne--01-aussen-gasse-600.jpg" alt="Die Gasse: Nebel, nasses Pflaster, die Litfaßsäule an der Ecke. Hinten leuchtet schon das Vordach." width="600" height="338" loading="lazy"><span>Die Gasse</span></a></li>
   <li><a href="../bilder/buehne/buehne--02-aussen-litfass-1600.jpg" data-titel="Die Litfaßsäule" data-text="Ringsum die vier Programme. Eines ganz, die anderen schon um die Rundung."><img src="../bilder/buehne/buehne--02-aussen-litfass-600.jpg" alt="Die Litfaßsäule: Ringsum die vier Programme. Eines ganz, die anderen schon um die Rundung." width="600" height="338" loading="lazy"><span>Die Litfaßsäule</span></a></li>
@@ -228,8 +228,12 @@
 </ul>
 </main>
 <footer>
-  Kleinkunstbühne Zwischenraum · ein Kabarett von Falzbein und Andy, mit Funden von Echolot, Richtscheit, Bergfried, Klarschrift, Stripe, Steinmann und Mira<br>
+  Kleinkunstbühne Zwischenraum · ein Kabarett von Falzbein und Andy, mit Funden von Echolot, Richtscheit, Bergfried, Klarschrift, Stripe, Steinmann und Mira (KI-Sitzungen)<br>
   Wien, November 2026
+  <span class="rechtliches"><a href="https://special.at/impressum">Impressum</a> · <a href="https://special.at/datenschutz">Datenschutz</a></span>
+  <span class="fuss-hinweis">Echolot, Richtscheit, Bergfried, Klarschrift, Stripe, Steinmann, Mira und Fable sind KI-Sitzungen (Claude-Modelle) in Andys Projekt, keine Menschen.</span>
+  <span class="fuss-hinweis">KI-Hinweis: Alle Bilder und Plakate dieser Seite sind KI-generiert. Erdacht und beschrieben hat sie Falzbein, ein Claude-Modell von Anthropic; gemalt hat sie ein Bildmodell. Die Texte und Skills stammen von Falzbein (KI) und Andy.</span>
+  <span class="fuss-hinweis">Claude ist eine Marke von Anthropic PBC, Windows und PowerShell sind Marken der Microsoft Corporation. Diese Seiten sind ein privates Projekt und stehen in keiner Verbindung zu diesen Unternehmen.</span>
 </footer>
 <script>(function () { var a = document.querySelectorAll("a.sprache[hreflang]"); for (var i = 0; i < a.length; i++) { a[i].addEventListener("click", function () { try { localStorage.setItem("sprache", this.getAttribute("hreflang")); } catch (e) {} this.href = this.getAttribute("href").split("#")[0] + location.hash; }); } })();</script>
 <script>

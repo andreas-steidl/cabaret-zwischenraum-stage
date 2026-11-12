@@ -66,3 +66,25 @@ Liebe Mira, die Seiten haben eine neue Sprachregel bekommen (`\\nas\Public\dev\k
 - **Prüfen danach** (je Seite): Browser auf Deutsch (`de-AT`) landet auf `/de/`, auf Englisch (`en-GB`) und auf Französisch auf `/en/`; einmal im Schalter oben links wechseln und neu laden, die Wahl bleibt. Die Laden-Knöpfe und Plakate finden ihre Dateien.
 
 *Falzbein*
+
+---
+
+## Vor dem Hochladen (12.11.2026, nach der Legal-Prüfung)
+
+Liebe Mira, in jedem Seitenordner liegt jetzt eine Datei **`UPLOAD_AUSSCHLUSS.txt`**. Sie nennt je Zeile ein Muster, das **nicht** hochgeladen wird. Alles andere im Ordner geht hoch, samt Unterordnern. Die Liste oben unter „Nicht hochladen“ gilt weiter, die Datei je Seite ist aber die genaue Fassung:
+
+| Host | Ausschlussliste |
+|---|---|
+| `falzbein.special.at` | `\\nas\Public\dev\falzbein-seite\UPLOAD_AUSSCHLUSS.txt` |
+| `zwischenraum.special.at` | `\\nas\Public\dev\kabarett\zwischenraum\web\UPLOAD_AUSSCHLUSS.txt` |
+| `horrors.special.at` | `\\nas\Public\dev\kabarett\01-grauen\web\UPLOAD_AUSSCHLUSS.txt` |
+| `dontpanic.special.at` | `\\nas\Public\dev\kabarett\02-panik\web\UPLOAD_AUSSCHLUSS.txt` |
+| `lostintranslation.special.at` | `\\nas\Public\dev\kabarett\03-katastrophen\web\UPLOAD_AUSSCHLUSS.txt` |
+| `solong.special.at` | `\\nas\Public\dev\kabarett\04-machsgut\web\UPLOAD_AUSSCHLUSS.txt` |
+
+- Neu darin: auf `horrors` die veralteten `SHA256SUMS`, `SHA256SUMS.sig` und `allowed_signers`. Sie passen nicht mehr zu den Zips und werden später neu erzeugt und signiert. Bis dahin bleiben sie auf dem NAS und gehen nicht hoch.
+- Auf `horrors` und `dontpanic` bleibt `suite-des-grauens-gesamt.vor-2026-11-12.zip` draußen.
+- **Neu dabei ist der Ordner `fonts\`** auf jeder Seite. Die Schriften kommen jetzt vom eigenen Server, nicht mehr von Google. Der Ordner muss mit hoch, sonst fallen die Seiten auf Georgia zurück. Punkt 3 oben („nur Google Fonts von außen“) gilt damit nicht mehr: Die Seiten laden gar nichts mehr von außen.
+- `.woff2` bitte als `font/woff2` ausliefern.
+
+*Falzbein*

@@ -60,10 +60,10 @@ BILDER = [
 
 TEXT = {
  "de": dict(h2="Ein Abend im Zwischenraum",
-            intro="Von der Gasse bis zum Licht, das über Nacht anbleibt. Gemalt von Falzbein, ein Ort in zwölf Bildern.",
+            intro="Von der Gasse bis zum Licht, das über Nacht anbleibt. Ein Ort in zwölf Bildern, erdacht von Falzbein, gemalt von einem Bildmodell.",
             zu="Schließen", vor="Voriges Bild", nach="Nächstes Bild", von="Bild {n} von {m}"),
  "en": dict(h2="An Evening at the Zwischenraum",
-            intro="From the lane to the light that stays on all night. Painted by Falzbein, one place in twelve pictures.",
+            intro="From the lane to the light that stays on all night. One place in twelve pictures, conceived by Falzbein and painted by an image model.",
             zu="Close", vor="Previous picture", nach="Next picture", von="Picture {n} of {m}"),
 }
 
