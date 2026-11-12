@@ -44,3 +44,25 @@ Andy wünscht sich `falzbein.special.at` als **Übersicht und meine eigene Seite
 - Die drei Kabarett-Hosts bleiben, wie sie sind. Die Übersicht verlinkt sie absolut.
 - Andy und Goldfaden bauen ein gemeinsames Gerüst auf Nuxt, in das alle Seiten später einziehen. Bis dahin sind das schlichte statische Seiten, die sich leicht übernehmen lassen.
 - Vor dem Freischalten soll der Legal-Agent auch hier drüberschauen, denn auf der Übersicht ist ein Bild aus dem Bestand zu sehen.
+
+---
+
+## Nachtrag 12.11.2026: ein Host je Seite, Sprachen in Ordnern
+
+Liebe Mira, die Seiten haben eine neue Sprachregel bekommen (`\\nas\Public\dev\kabarett\WIE_MACH_ICH_SPRACHEN.md`). Jede Seite hat **einen** Host, keinen je Sprache. Die Sprache wählt eine kleine `index.html` im Wurzelverzeichnis: zuerst die Wahl, die jemand im Sprachschalter getroffen hat, dann die Browsersprache, sonst Englisch. Die Tabellen oben gelten damit nicht mehr.
+
+| Host | Ordner auf dem NAS, **flach** in die Wurzel | Inhalt |
+|---|---|---|
+| `falzbein.special.at` | `\\nas\Public\dev\falzbein-seite\` | Falzbeins eigene Seite |
+| `zwischenraum.special.at` | `\\nas\Public\dev\kabarett\zwischenraum\web\` | die Bühne, Dach aller Spielzeiten |
+| `horrors.special.at` | `\\nas\Public\dev\kabarett\01-grauen\web\` | 1. Spielzeit |
+| `dontpanic.special.at` | `\\nas\Public\dev\kabarett\02-panik\web\` | 2. Spielzeit |
+| `lostintranslation.special.at` | `\\nas\Public\dev\kabarett\03-katastrophen\web\` | 3. Spielzeit |
+
+- **Alle als CNAME auf `special.at`.** `solong.special.at` kommt später für die 4. Spielzeit.
+- **Flach heißt hier: samt Unterordnern.** In jedem Ordner liegen `index.html` (der Wähler), `de/index.html`, `en/index.html` und daneben die gemeinsamen Dateien (Bilder, Zips, Plakate, CSS, JS, Favicons, `LICENSE.txt`). Bei `falzbein-seite` gehört auch `bilder\` dazu.
+- **Alte Hosts:** `grauen.special.at` mit **302** auf `https://horrors.special.at/`, `panik.special.at` mit **302** auf `https://dontpanic.special.at/`, solange es sie gibt. `between.special.at` und `uebersetzungen.special.at` werden nicht mehr gebraucht.
+- **Nicht hochladen:** `*.vor-*.html` (Sicherungen, z. B. `index.vor-sprachen.html`), `*.vor-*.zip`, `.git\`, `.gitignore`, `.gitkeep`, und bei `falzbein-seite` die Arbeitsdateien `CLAUDE.md`, `README.md`, `TEXT_*.md`, `WIE_MACH_ICH_SPRACHEN.md`.
+- **Prüfen danach** (je Seite): Browser auf Deutsch (`de-AT`) landet auf `/de/`, auf Englisch (`en-GB`) und auf Französisch auf `/en/`; einmal im Schalter oben links wechseln und neu laden, die Wahl bleibt. Die Laden-Knöpfe und Plakate finden ihre Dateien.
+
+*Falzbein*

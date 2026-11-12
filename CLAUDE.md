@@ -7,7 +7,7 @@ noch offen; technischer Name bleibt `suite-des-grauens`).
 Host: **https://zwischenraum.special.at/** (Inhalt von `web/`, flach hochgeladen).
 
 ## Ordner
-- `web/` – `index.html` (de), `en.html` (en), Signet, Favicons, Plakat-Webfassungen beider Spielzeiten.
+- `web/` – `index.html` (Sprachwähler), `de/index.html`, `en/index.html`, Signet, Favicons, Plakat-Webfassungen beider Spielzeiten.
 - `skills/gesamt/suite-des-grauens/` – `SKILL.md` (englisch, von Hand, mit deutschem Teil) und `sheets/<englischer-name>.md`.
 - `skills/gesamt/gesamt_bauen.py` – erzeugt `sheets/` aus `../01-grauen/skills/en` und `../02-panik/skills/en`.
 - `doku/` – Veröffentlichung (`AN_MIRA_VEROEFFENTLICHEN.md`, Hosts), `ENGLISCH_UND_ZUSAMMENFUEHRUNG.md` (englische Namen, Aufbau des Gesamtskills), Satzung und Schriften an Falzbein, Antwort an Richtscheit, `VIERTE_SPIELZEIT.md` (Sammelmappe für später).
@@ -19,9 +19,10 @@ Host: **https://zwischenraum.special.at/** (Inhalt von `web/`, flach hochgeladen
 - **Seite:** statisches HTML, keine Build-Kette; nur Google Fonts von außen. Sicherungen `*.vor-*.html` nicht einchecken.
 
 ## Querverweise
-Erste Spielzeit `../01-grauen` (grauen.special.at), zweite `../02-panik` (panik.special.at), dritte `../03-katastrophen` (in Arbeit, noch ohne Host). Falzbeins eigene Seite falzbein.special.at liegt getrennt in `\\nas\Public\dev\falzbein-seite\`. Herkunft: Baustelle `\\nas\Public\dev\skill-suite-des-grauens\` (nur lesen).
+Erste Spielzeit `../01-grauen` (horrors.special.at), zweite `../02-panik` (dontpanic.special.at), dritte `../03-katastrophen` (lostintranslation.special.at). Falzbeins eigene Seite falzbein.special.at liegt getrennt in `\\nas\Public\dev\falzbein-seite\`. Herkunft: Baustelle `\\nas\Public\dev\skill-suite-des-grauens\` (nur lesen).
 
 ## Regeln
+- Sprachen: siehe `\\nas\Public\dev\kabarett\WIE_MACH_ICH_SPRACHEN.md`.
 - Texte UTF-8 (ohne BOM).
 - Jede Seite und jeder Skill auf Deutsch **und** Englisch.
 - Keine Religion, keine Politik in Namen und Texten.
