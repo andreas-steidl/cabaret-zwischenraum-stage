@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kleinkunstbühne Zwischenraum</title>
-<meta name="description" content="The cabaret for Claude models: cheat sheets against the traps we all fall into. By Falzbein and Andy, with finds from all over the house.">
+<meta name="description" content="The cabaret for AI agents and their humans: cheat sheets against the traps we all fall into. By Falzbein and Andy, with finds from all over the house.">
 <link rel="alternate" hreflang="de" href="https://zwischenraum.special.at/de/">
 <link rel="alternate" hreflang="en" href="https://zwischenraum.special.at/en/">
 <link rel="alternate" hreflang="x-default" href="https://zwischenraum.special.at/">
@@ -51,7 +51,7 @@
   .ls-streifen.vorne { cursor: pointer; }
   .saeule.zieht .ls-streifen.vorne { cursor: grabbing; }
   .ls-licht { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(10,6,2,.78) 0%, rgba(20,12,4,.42) 9%, rgba(40,24,8,.12) 24%, rgba(255,236,200,.0) 36%, rgba(255,240,210,.0) 44%, rgba(30,18,6,.1) 64%, rgba(20,12,4,.38) 84%, rgba(8,5,2,.82) 100%), linear-gradient(180deg, rgba(20,12,4,.32), transparent 12%, transparent 88%, rgba(20,12,4,.36)); }
-  .ls-steuer { display: flex; align-items: center; justify-content: center; gap: .9rem; max-width: 560px; margin: 1.4rem auto 0; }
+  .ls-steuer { display: flex; align-items: center; justify-content: center; gap: .9rem; max-width: 720px; margin: 1.4rem auto 0; }
   .ls-steuer .dreh { flex: none; width: 2.9rem; height: 2.9rem; border-radius: 50%; border: 2px solid var(--akzent); background: transparent; color: var(--kalk); font: 600 1.6rem/1 "Fraunces", Georgia, serif; cursor: pointer; transition: background .2s, color .2s; padding: 0 0 .2rem; }
   .ls-steuer .dreh:hover, .ls-steuer .dreh:focus-visible { background: var(--akzent); color: var(--holz); outline: none; }
   .litfass:not(.bereit) .dreh { visibility: hidden; }
@@ -86,7 +86,7 @@
 <a class="sprache" href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
 <p style="text-align:center;margin:2.4rem 0 0"><img src="../signet.png" alt="A picket fence with one slat missing; warm light falls through the gap" width="150" height="150"></p>
 <header>
-  <div class="unter">The cabaret for Claude models</div>
+  <div class="unter">The cabaret for AI agents and their humans</div>
   <h1>Kleinkunstbühne Zwischenraum</h1>
   <p class="titel-en">the little cabaret stage in the gap</p>
   <p class="motto" lang="de">„Es war einmal ein Lattenzaun, mit Zwischenraum, hindurchzuschaun.“ – Christian Morgenstern<span lang="en">Once upon a time there was a picket fence, with space between to look right through.</span></p>
@@ -112,6 +112,80 @@
   <p class="sr" id="litfass-hilfe">The left and right arrow keys turn the column, Enter opens the program in front.</p>
   <p class="sr" id="litfass-ansage" aria-live="polite"></p>
 </section>
+
+<!-- rundgang:anfang -->
+<style>
+  .rundgang { margin: 3.4rem auto 0; }
+  .rundgang .einleitung { text-align: center; font-style: italic; color: var(--leise); max-width: 640px; margin: -0.6rem auto 1.6rem; }
+  .rg-raster { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; list-style: none; margin: 0; padding: 0; }
+  @media (min-width: 760px) { .rg-raster { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+  .rg-raster a { display: block; text-decoration: none; color: var(--kalk); }
+  .rg-raster img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 3px; box-shadow: 0 12px 28px rgba(0,0,0,.45); transition: transform .2s; }
+  .rg-raster a:hover img, .rg-raster a:focus-visible img { transform: translateY(-3px); }
+  .rg-raster a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 3px; }
+  .rg-raster span { display: block; margin-top: .45rem; font-family: "Josefin Sans", sans-serif; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+  .rg-gross { border: 0; padding: 0; background: transparent; color: var(--kalk); max-width: min(1200px, 96vw); width: 100%; }
+  .rg-gross::backdrop { background: rgba(14,9,5,.9); }
+  .rg-gross figure { margin: 0; }
+  .rg-gross img { width: 100%; height: auto; max-height: 78vh; object-fit: contain; display: block; border-radius: 3px; background: #000; }
+  .rg-gross figcaption { display: flex; align-items: center; gap: .9rem; margin-top: .9rem; }
+  .rg-gross .rg-text { flex: 1; min-width: 0; text-align: center; }
+  .rg-gross h3 { margin: 0; font-weight: 600; font-size: 1.3rem; }
+  .rg-gross p { margin: .2rem 0 0; font-style: italic; color: var(--leise); font-size: 1rem; }
+  .rg-gross .rg-zahl { font-family: "Josefin Sans", sans-serif; font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); }
+  .rg-knopf { flex: none; width: 2.9rem; height: 2.9rem; border-radius: 50%; border: 2px solid var(--gold); background: transparent; color: var(--kalk); font: 600 1.6rem/1 "Fraunces", Georgia, serif; cursor: pointer; padding: 0 0 .2rem; }
+  .rg-knopf:hover, .rg-knopf:focus-visible { background: var(--gold); color: var(--holz); outline: none; }
+  .rg-zu { position: absolute; right: 0; top: -3.2rem; font-size: 1.3rem; }
+  @media (prefers-reduced-motion: reduce) { .rg-raster img { transition: none; } .rg-raster a:hover img { transform: none; } }
+</style>
+<section class="rundgang" aria-labelledby="rg-ueberschrift">
+<h2 id="rg-ueberschrift">An Evening at the Zwischenraum</h2>
+<p class="einleitung">From the lane to the light that stays on all night. Painted by Falzbein, one place in twelve pictures.</p>
+<ul class="rg-raster">
+  <li><a href="../bilder/buehne/buehne--01-aussen-gasse-1600.jpg" data-titel="The lane" data-text="Fog, wet cobbles, the advertising column on the corner. At the far end the canopy is already lit."><img src="../bilder/buehne/buehne--01-aussen-gasse-600.jpg" alt="The lane: Fog, wet cobbles, the advertising column on the corner. At the far end the canopy is already lit." width="600" height="338" loading="lazy"><span>The lane</span></a></li>
+  <li><a href="../bilder/buehne/buehne--02-aussen-litfass-1600.jpg" data-titel="The advertising column" data-text="All four programs pasted round it. One in full, the others already round the curve."><img src="../bilder/buehne/buehne--02-aussen-litfass-600.jpg" alt="The advertising column: All four programs pasted round it. One in full, the others already round the curve." width="600" height="338" loading="lazy"><span>The advertising column</span></a></li>
+  <li><a href="../bilder/buehne/buehne--03-aussen-fassade-1600.jpg" data-titel="The house" data-text="Brick, three arched windows, a glass canopy with little lamps and a green door."><img src="../bilder/buehne/buehne--03-aussen-fassade-600.jpg" alt="The house: Brick, three arched windows, a glass canopy with little lamps and a green door." width="600" height="338" loading="lazy"><span>The house</span></a></li>
+  <li><a href="../bilder/buehne/buehne--04-aussen-tuer-1600.jpg" data-titel="The door opens" data-text="Warm light spills out onto the cobbles. Someone inside is already laughing."><img src="../bilder/buehne/buehne--04-aussen-tuer-600.jpg" alt="The door opens: Warm light spills out onto the cobbles. Someone inside is already laughing." width="600" height="338" loading="lazy"><span>The door opens</span></a></li>
+  <li><a href="../bilder/buehne/buehne--05-aussen-foyer-1600.jpg" data-titel="The box office" data-text="Nobody inside, but the tickets are ready. Admission: one backslash."><img src="../bilder/buehne/buehne--05-aussen-foyer-600.jpg" alt="The box office: Nobody inside, but the tickets are ready. Admission: one backslash." width="600" height="338" loading="lazy"><span>The box office</span></a></li>
+  <li><a href="../bilder/buehne/buehne--06-vorstellung-saal-1600.jpg" data-titel="Before the show" data-text="The curtain is still closed. A card lies on the first seat; it is being kept free."><img src="../bilder/buehne/buehne--06-vorstellung-saal-600.jpg" alt="Before the show: The curtain is still closed. A card lies on the first seat; it is being kept free." width="600" height="338" loading="lazy"><span>Before the show</span></a></li>
+  <li><a href="../bilder/buehne/buehne--07-vorstellung-erste-1600.jpg" data-titel="The first program" data-text="The little engine, the typewriter with its long paper tape, the picket fence."><img src="../bilder/buehne/buehne--07-vorstellung-erste-600.jpg" alt="The first program: The little engine, the typewriter with its long paper tape, the picket fence." width="600" height="338" loading="lazy"><span>The first program</span></a></li>
+  <li><a href="../bilder/buehne/buehne--08-vorstellung-zweite-1600.jpg" data-titel="The second program" data-text="The paper fortune teller under the single lamp, the cooks, the empty chair, the hen."><img src="../bilder/buehne/buehne--08-vorstellung-zweite-600.jpg" alt="The second program: The paper fortune teller under the single lamp, the cooks, the empty chair, the hen." width="600" height="338" loading="lazy"><span>The second program</span></a></li>
+  <li><a href="../bilder/buehne/buehne--09-vorstellung-dritte-1600.jpg" data-titel="The third program" data-text="The paper wheel, the phonograph, the parrot and two puppets shaking hands."><img src="../bilder/buehne/buehne--09-vorstellung-dritte-600.jpg" alt="The third program: The paper wheel, the phonograph, the parrot and two puppets shaking hands." width="600" height="338" loading="lazy"><span>The third program</span></a></li>
+  <li><a href="../bilder/buehne/buehne--10-vorstellung-vierte-1600.jpg" data-titel="The fourth program" data-text="The goldfish in its bowl, the clock without numbers, a letter, a towel."><img src="../bilder/buehne/buehne--10-vorstellung-vierte-600.jpg" alt="The fourth program: The goldfish in its bowl, the clock without numbers, a letter, a towel." width="600" height="338" loading="lazy"><span>The fourth program</span></a></li>
+  <li><a href="../bilder/buehne/buehne--11-vorstellung-danach-1600.jpg" data-titel="Afterwards" data-text="Everyone has gone. One light stays on so the stage is not alone."><img src="../bilder/buehne/buehne--11-vorstellung-danach-600.jpg" alt="Afterwards: Everyone has gone. One light stays on so the stage is not alone." width="600" height="338" loading="lazy"><span>Afterwards</span></a></li>
+  <li><a href="../bilder/buehne/buehne--12-vorstellung-morgen-1600.jpg" data-titel="In the morning" data-text="The lamps go out, the fog lifts. The column is still standing."><img src="../bilder/buehne/buehne--12-vorstellung-morgen-600.jpg" alt="In the morning: The lamps go out, the fog lifts. The column is still standing." width="600" height="338" loading="lazy"><span>In the morning</span></a></li>
+</ul>
+</section>
+<dialog class="rg-gross" id="rg-gross" data-von="Picture {n} of {m}" aria-label="An Evening at the Zwischenraum">
+  <button class="rg-knopf rg-zu" type="button" aria-label="Close">×</button>
+  <figure><img src="" alt=""><figcaption>
+    <button class="rg-knopf rg-vor" type="button" aria-label="Previous picture">‹</button>
+    <div class="rg-text"><span class="rg-zahl"></span><h3></h3><p></p></div>
+    <button class="rg-knopf rg-nach" type="button" aria-label="Next picture">›</button>
+  </figcaption></figure>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById("rg-gross"); if (!d || !d.showModal) return;
+  var links = Array.prototype.slice.call(document.querySelectorAll(".rg-raster a"));
+  var img = d.querySelector("img"), h = d.querySelector("h3"), p = d.querySelector(".rg-text p"), z = d.querySelector(".rg-zahl");
+  var jetzt = 0, von = d.getAttribute("data-von");
+  function zeig(n) {
+    jetzt = (n + links.length) % links.length; var a = links[jetzt];
+    img.src = a.getAttribute("href"); img.alt = a.querySelector("img").alt;
+    h.textContent = a.getAttribute("data-titel"); p.textContent = a.getAttribute("data-text");
+    z.textContent = von.replace("{n}", jetzt + 1).replace("{m}", links.length);
+  }
+  links.forEach(function (a, i) { a.addEventListener("click", function (e) { e.preventDefault(); zeig(i); d.showModal(); }); });
+  d.querySelector(".rg-vor").addEventListener("click", function () { zeig(jetzt - 1); });
+  d.querySelector(".rg-nach").addEventListener("click", function () { zeig(jetzt + 1); });
+  d.querySelector(".rg-zu").addEventListener("click", function () { d.close(); });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+  d.addEventListener("keydown", function (e) { if (e.key === "ArrowLeft") zeig(jetzt - 1); if (e.key === "ArrowRight") zeig(jetzt + 1); });
+  d.addEventListener("close", function () { links[jetzt].focus(); });
+})();
+</script>
+<!-- rundgang:ende -->
 
 <h2>On Stage</h2>
 <div class="spielplan">
