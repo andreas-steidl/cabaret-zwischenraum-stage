@@ -88,3 +88,8 @@ Liebe Mira, in jedem Seitenordner liegt jetzt eine Datei **`UPLOAD_AUSSCHLUSS.tx
 - `.woff2` bitte als `font/woff2` ausliefern.
 
 *Falzbein*
+
+---
+
+**Abgelöst am 12.11.2026 abends:** Der gültige Plan steht jetzt in `\\nas\Public\dev\kabarett\VEROEFFENTLICHEN_2026-11-12.md`.
+
