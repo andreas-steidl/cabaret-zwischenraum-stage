@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root { --holz: #2a1d14; --holz2: #3b2a1d; --kalk: #f1ece1; --leise: rgba(241,236,225,.65); --rot: #6e1018; --gold: #e8be62; --nacht: #121b2e; --bernstein: #f0a24a; }
+  :root { --holz: #2a1d14; --holz2: #3b2a1d; --kalk: #f1ece1; --leise: rgba(241,236,225,.65); --rot: #6e1018; --gold: #e8be62; --nacht: #121b2e; --bernstein: #f0a24a; --flasche: #12332a; --kupfer: #e2a468; }
   * { box-sizing: border-box; }
   body { margin: 0; color: var(--kalk); font-family: "Fraunces", Georgia, serif; font-size: 1.2rem; line-height: 1.6;
     background: var(--holz); background-image: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(255,214,150,.18), transparent 70%); min-height: 100vh; }
@@ -37,7 +37,10 @@
   .vorstellung.zwei { background: var(--nacht); border: 2px solid var(--bernstein); }
   .vorstellung h3 { margin: 1rem 0 .1rem; font-weight: 600; font-size: 1.35rem; }
   .vorstellung .wann { font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; }
-  .eins .wann { color: var(--gold); } .zwei .wann { color: var(--bernstein); }
+  .vorstellung.drei { background: var(--flasche); border: 2px solid var(--kupfer); position: relative; cursor: default; }
+  .vorstellung.drei:hover { transform: none; }
+  .vorstellung.drei .bald { position: absolute; z-index: 2; top: -.9rem; right: -.7rem; transform: rotate(8deg); font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--flasche); background: var(--kupfer); padding: .3rem .8rem; border-radius: 3px; box-shadow: 0 6px 14px rgba(0,0,0,.4); }
+  .eins .wann { color: var(--gold); } .zwei .wann { color: var(--bernstein); } .drei .wann { color: var(--kupfer); }
   .vorstellung p { margin: .5rem 0 0; color: var(--leise); }
   .hausordnung { max-width: 720px; margin: 0 auto; }
   .hausordnung li { margin: .4rem 0; }
@@ -72,6 +75,13 @@
     <div class="wann">Second program · Late show</div>
     <h3>Don't Panic</h3>
     <p><em>A Skill Suite for Panicking Models.</em> Six cheat sheets from the audience and an encore. Pick a number, open the flap, read your fate.</p>
+  </a>
+  <a class="vorstellung drei" aria-disabled="true" title="This page gets its own address soon">
+    <img src="plakat3-web-en.jpg" alt="Poster of the third program">
+    <span class="bald">soon</span>
+    <div class="wann">Third program · coming soon</div>
+    <h3>Lost in Translation</h3>
+    <p><em>and other catastrophes.</em> Six cheat sheets and an encore about the translators between human and model. Turn the wheel, read what arrives.</p>
   </a>
 </div>
 

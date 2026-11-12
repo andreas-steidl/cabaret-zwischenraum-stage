@@ -1,6 +1,6 @@
 ---
 name: suite-des-grauens
-description: 'The Skill Suite of Horrors: twelve short cheat sheets for the Windows traps every Claude session steps into - backslashes in paths, CRLF, escape codes, broken tables, spaces in paths, $ in PowerShell strings, lost exit codes, empty arguments, case-only twins, service accounts that do not exist yet, two processes on one file, messages that overtake each other. Read it on "bad interpreter: /bin/bash^M", "command not found" with \r, ←[0m or \x1b in output, â”€ in a table, Windows looking for "C:\Program", error 1053 or 1332, "Variable reference is not valid" (Der Variablenverweis ist ungültig), "argument is null or empty", a test pipe that reports green while tests fail, "being used by another process", or a path reported missing that is there. Read the table, then only the one sheet that fits. Optional, best taken with a smile.'
+description: 'The Skill Suite of Horrors: nineteen short cheat sheets for the traps every Claude session on Windows steps into - backslashes, CRLF, escape codes, broken tables, spaces in paths, $ in strings, lost exit codes, empty arguments, case-only twins, service accounts not there yet, two processes on one file, messages that overtake each other, misheard dictation, German Windows. Read it on "bad interpreter: /bin/bash^M", ←[0m or \x1b in output, â”€ in a table, Windows looking for "C:\Program", error 1053 or 1332, "Variable reference is not valid", "argument is null or empty", a test pipe green while tests fail, "being used by another process", a dictated name the project does not know, German account names like Jeder, [double]::Parse giving 15, curl, sc or where doing something else in PowerShell, Copy-Item copying backwards, or a path reported missing that is there. Read the table, then only the one sheet that fits. Optional, best taken with a smile.'
 ---
 
 # The Skill Suite of Horrors
@@ -36,6 +36,18 @@ sheet from `sheets/`. Each sheet stands on its own.
 | [`musical-chairs`](sheets/musical-chairs.md) | `Start-Process -ArgumentList` with an empty element, junctions and symlinks with two addresses, WSL watchers on `/mnt/d` that never fire |
 | [`tortoise-and-hare`](sheets/tortoise-and-hare.md) | the human's answer belongs to an older question, messages overtake each other in the middle of work, a bare “yes” without context |
 
+## Third season: Lost in Translation
+
+| Sheet | Read it when … |
+|---|---|
+| [`mondegreen`](sheets/mondegreen.md) | the human dictates, a name turns up that the project doesn't know, a sentence is grammatical and makes no sense, a dictated name or number is about to trigger an action |
+| [`body-language`](sheets/body-language.md) | you are about to report to a human, the answer is “lol?” or “huh?”, a technical term wants to be translated word for word, a “Mock” sounds like mockery |
+| [`false-friends`](sheets/false-friends.md) | `curl`, `wget`, `sc`, `where`, `rm -rf` or `echo` do something else in PowerShell, `sc create` writes a file, a script behaves differently in 5.1 and 7 |
+| [`gobbledygook`](sheets/gobbledygook.md) | `Jeder` instead of `Everyone`, error 1332 on an account name, a grep for an English error finds the German one, `[double]::Parse('1.5')` gives 15, `SUMME` instead of `SUM` |
+| [`back-to-front`](sheets/back-to-front.md) | `Copy-Item` with one named and one unnamed path copies backwards, `ln` against `mklink`, a file is smaller after copying, a check says “equal” and something is missing |
+| [`word-for-word`](sheets/word-for-word.md) | a message is ambiguous, you can't tell an assignment from thinking out loud, “a day” that is an hour, a house word that looks like a typo |
+| [`ps-and-qs`](sheets/ps-and-qs.md) | a project speaks two languages, one term is translated two ways, a new coinage is on its way into a second text |
+
 ## The one rule behind all of them
 
 Whatever travels through several layers (Bash, PowerShell, Python, a native
@@ -68,6 +80,13 @@ Tabelle oben und dann nur den einen Zettel, der passt.
 | Stille Post | broken-telephone | Exit-Codes und Daten, die in Pipes verloren gehen |
 | Leerer Platz | musical-chairs | Leere Argumente, Junctions, WSL-Wächter |
 | Hase und Igel | tortoise-and-hare | Nachrichten, die sich im Gespräch überholen |
+| Nur Bahnhof | mondegreen | Diktat und Spracherkennung: verhörte Namen und Zahlen |
+| Körpergröße | body-language | Fachwörter in Berichten an Menschen |
+| Falsche Freunde | false-friends | Befehle, die in PowerShell etwas anderes tun, als sie versprechen |
+| Kauderwelsch | gobbledygook | Das deutsche Windows: Kontonamen, Meldungen, Zahlen und Daten |
+| Rückwärts | back-to-front | Kopierbefehle, die rückwärts kopieren oder verlinken |
+| Beim Wort genommen | word-for-word | Den Menschen lesen: Auftrag, lauter Gedanke, Beobachtung |
+| Setzkasten | ps-and-qs | Eine Übersetzungstabelle je Projekt |
 
 *By Falzbein, November 2026, with finds from fellow sessions who walked into
 these traps first and said so. MIT licence.*

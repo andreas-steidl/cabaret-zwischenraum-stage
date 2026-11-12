@@ -4,8 +4,9 @@
 Andy, 10.11.2026 (über Richtscheit): Die Zettel werden ein Skill, englisch zuerst, mit kurzem
 deutschem Teil; die deutschen Namen bleiben, jeder Zettel bekommt ein englisches Bild
 (ENGLISCH_UND_ZUSAMMENFUEHRUNG.md). Andy: „Die Namen sind cool.“
-Quelle sind die englischen Fassungen der Spielzeiten: ../../../01-grauen/skills/en/ und
-../../../02-panik/skills/en/ (relativ zu diesem Skript). Das Skript ersetzt nur den Kopf jedes
+Quelle sind die englischen Fassungen der Spielzeiten: ../../../01-grauen/skills/en/,
+../../../02-panik/skills/en/ und (seit 12.11.2026) ../../../03-katastrophen/skills/en/
+(relativ zu diesem Skript). Das Skript ersetzt nur den Kopf jedes
 Zettels (Titel und Einleitung) und die Verweise auf andere Zettel; der Inhalt bleibt, wie er ist.
 Kein Manifest, keine Signatur (die kommen gesammelt am Schluss).
 
@@ -22,6 +23,7 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 KABARETT = os.path.abspath(os.path.join(HIER, "..", "..", ".."))
 EN1 = os.path.join(KABARETT, "01-grauen", "skills", "en")
 EN2 = os.path.join(KABARETT, "02-panik", "skills", "en")
+EN3 = os.path.join(KABARETT, "03-katastrophen", "skills", "en")
 ZIEL = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HIER, "suite-des-grauens")
 
 # deutscher Name -> (englischer Name, Quellordner, Spielzeit)
@@ -38,6 +40,13 @@ ZETTEL = [
     ("stille-post", "broken-telephone", os.path.join(EN2, "stille-post"), 2),
     ("leerer-platz", "musical-chairs", os.path.join(EN2, "leerer-platz"), 2),
     ("hase-und-igel", "tortoise-and-hare", os.path.join(EN2, "hase-und-igel"), 2),
+    ("nur-bahnhof", "mondegreen", os.path.join(EN3, "nur-bahnhof"), 3),
+    ("koerpergroesse", "body-language", os.path.join(EN3, "koerpergroesse"), 3),
+    ("falsche-freunde", "false-friends", os.path.join(EN3, "falsche-freunde"), 3),
+    ("kauderwelsch", "gobbledygook", os.path.join(EN3, "kauderwelsch"), 3),
+    ("rueckwaerts", "back-to-front", os.path.join(EN3, "rueckwaerts"), 3),
+    ("beim-wort-genommen", "word-for-word", os.path.join(EN3, "beim-wort-genommen"), 3),
+    ("setzkasten", "ps-and-qs", os.path.join(EN3, "setzkasten"), 3),
 ]
 
 KOPF = {
@@ -145,6 +154,75 @@ always already at the finish: “Ick bün all hier!”*
 *In a chat the model is the hare. It dashes off, writes, works, asks, and
 by the time the human arrives with an answer, the next thing is already
 standing there. The human is not late. Just simultaneous.*
+""",
+"mondegreen": """# Mondegreen
+
+*German edition: Nur Bahnhof.*
+
+*A mondegreen is a mishearing. A girl once heard the ballad line “and laid
+him on the green” as “and Lady Mondegreen”, and a lady was born who never
+existed. Speech recognition understands every word. Just not the one that
+was said.*
+""",
+"body-language": """# Body language
+
+*German edition: Körpergröße.*
+
+*The status says: “+1 SOLL Körpergröße” (+1 SHOULD, body size). The human
+asks: “Körpergröße? lol?” In German that is your height, the number the
+doctor writes down. What was meant was the size of the request body, over
+four kilobytes. The door measures nobody against the frame. It only weighs
+the letter. Technical language has a body language of its own: it says
+things you never meant.*
+""",
+"false-friends": """# False friends
+
+*German edition: Falsche Freunde.*
+
+*A false friend is a word that looks like one you know and means something
+else: German “eventuell” is not eventually, “sensibel” is not sensible.
+Commands do it too. They look like old acquaintances from Linux. They greet
+you warmly. And then they do something else entirely, and a different
+something depending on the version.*
+""",
+"gobbledygook": """# Gobbledygook
+
+*German edition: Kauderwelsch.*
+
+*Gobbledygook is language nobody can follow, named after the gobble of a
+turkey. Windows speaks its owner's language. Unfortunately also where a
+script expects English, and in Vienna a different German than in Berlin.*
+""",
+"back-to-front": """# Back to front
+
+*German edition: Rückwärts.*
+
+*A jumper put on back to front has everything in it, only facing the other
+way. At 02:42 at night a command copies a board “to dev”. Afterwards the
+board has 34 KB instead of 504. The check reports “equal”, and that is even
+true: both sides are now equally wrong.*
+""",
+"word-for-word": """# Word for word
+
+*German edition: Beim Wort genommen (taken at one's word).*
+
+*Word for word is how a dictionary translates, and how a model reads. The
+human writes fast, with typos, right into the middle of the work. The model
+reads slowly, every word, and takes some things more literally than they
+were meant, and others not literally enough.*
+""",
+"ps-and-qs": """# Ps and Qs
+
+*German edition: Setzkasten (the type case).*
+
+*Mind your Ps and Qs, says the English idiom, and one explanation comes
+from the type case: in metal type a small p and a small q are mirror
+images, and the apprentice had to keep them apart. For three days a word
+was Germanized, taken back and Germanized again. In the end only one
+fitted: Setzkasten. In the typesetter's cases the capitals sat above and
+the small letters below, which is why they are called upper case and lower
+case. The one translation that was right was a few hundred years old
+already.*
 """,
 }
 
