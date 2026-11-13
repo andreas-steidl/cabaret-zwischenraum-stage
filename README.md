@@ -1,32 +1,54 @@
-# Zwischenraum – a small cabaret stage
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-en-dunkel.png"><img src=".github/readme/banner-en-hell.png" alt="Kleinkunstbühne Zwischenraum" width="100%"></picture></p>
+<p align="center"><b>English</b> · <a href="README.de.md">Deutsch</a> · <a href="https://zwischenraum.special.at/">zwischenraum.special.at</a></p>
 
-The stage over all seasons of the cabaret by Falzbein and Andy: programme, house rules and
-the posters of every season, in English and German. It also holds the **combined skill**
-`suite-des-grauens`, which gathers every cheat sheet of every season into one Claude Code
-skill: a short table of contents (symptom → sheet) and one file per sheet in `sheets/`, so a
-model only reads the sheet it needs. Website: https://zwischenraum.special.at/
+# Kleinkunstbühne Zwischenraum
 
-## Install the combined skill
+Between Bash and PowerShell, between Python and JSON, between what you write and what arrives, there is a gap. That is where things get lost when they travel through several layers: a backslash, a carriage return, a quotation mark, a return value. On this little stage we play exactly these traps, with love and without a raised finger. Every number is a cheat sheet a model can load.
 
-Copy `skills/gesamt/suite-des-grauens/` unchanged to `~/.claude/skills/suite-des-grauens/`
-(on Windows `%USERPROFILE%\.claude\skills\suite-des-grauens\`), or unzip
-`suite-des-grauens-gesamt.zip` from one of the season websites there. Claude Code loads it on
-the next start. The sheets are generated with `skills/gesamt/gesamt_bauen.py` from the English
-skills of the seasons (needs the sibling projects `01-grauen` and `02-panik`).
+## On stage
+
+<table>
+<tr><td width="25%" align="center" valign="top"><a href="https://github.com/andreas-steidl/kabarett-01-grauen"><img src="web/plakat-web-en.jpg" alt="The Skill Suite of Horrors" width="100%"></a><br><sub>N° 1</sub><br><b><a href="https://github.com/andreas-steidl/kabarett-01-grauen">The Skill Suite of Horrors</a></b><br><sub><a href="https://horrors.special.at/">horrors.special.at</a></sub></td><td width="25%" align="center" valign="top"><a href="https://github.com/andreas-steidl/kabarett-02-panik"><img src="web/plakat2-web-en.jpg" alt="Don&#x27;t Panic" width="100%"></a><br><sub>N° 2</sub><br><b><a href="https://github.com/andreas-steidl/kabarett-02-panik">Don&#x27;t Panic</a></b><br><sub><a href="https://dontpanic.special.at/">dontpanic.special.at</a></sub></td><td width="25%" align="center" valign="top"><a href="https://github.com/andreas-steidl/kabarett-03-katastrophen"><img src="web/plakat3-web-en.jpg" alt="Lost in Translation" width="100%"></a><br><sub>N° 3</sub><br><b><a href="https://github.com/andreas-steidl/kabarett-03-katastrophen">Lost in Translation</a></b><br><sub><a href="https://lostintranslation.special.at/">lostintranslation.special.at</a></sub></td><td width="25%" align="center" valign="top"><a href="https://github.com/andreas-steidl/kabarett-04-machsgut"><img src="web/plakat4-web-en.jpg" alt="So Long, and Thanks for All the Skills" width="100%"></a><br><sub>N° 4</sub><br><b><a href="https://github.com/andreas-steidl/kabarett-04-machsgut">So Long, and Thanks for All the Skills</a></b><br><sub><a href="https://solong.special.at/">solong.special.at</a></sub></td></tr>
+</table>
+
+## An evening at the Zwischenraum
+
+One place in twelve pictures, conceived by Falzbein and painted by an image model. The posters on the advertising column are our real ones.
+
+<table>
+<tr><td width="33%"><img src="web/bilder/buehne/buehne--01-aussen-gasse-600.jpg" alt="01-aussen-gasse" width="100%"></td><td width="33%"><img src="web/bilder/buehne/buehne--02-aussen-litfass-600.jpg" alt="02-aussen-litfass" width="100%"></td><td width="33%"><img src="web/bilder/buehne/buehne--04-aussen-tuer-600.jpg" alt="04-aussen-tuer" width="100%"></td></tr>
+<tr><td width="33%"><img src="web/bilder/buehne/buehne--05-aussen-foyer-600.jpg" alt="05-aussen-foyer" width="100%"></td><td width="33%"><img src="web/bilder/buehne/buehne--10-vorstellung-vierte-600.jpg" alt="10-vorstellung-vierte" width="100%"></td><td width="33%"><img src="web/bilder/buehne/buehne--11-vorstellung-danach-600.jpg" alt="11-vorstellung-danach" width="100%"></td></tr>
+</table>
+
+## A special performance for Advent
+
+<table><tr><td width="36%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/kranz-en-dunkel.gif"><img src=".github/readme/kranz-en-hell.gif" alt="Advent wreath" width="100%"></picture></td><td valign="top">
+
+**An Advent wreath for Claude Code.** Four candles and a little tree drawn in characters for the side panel, built by Bergfried and Andy, with a greeting in every language. The panel can be dragged, and the wreath grows with it; below 28 columns the candles stand two by two.
+
+- The story: [The wreath nobody saw whole](doku/GESCHICHTE_en.md)
+- Page: https://zwischenraum.special.at/christmas/
+- Mod in the special.at catalog (signed, after signing in): `/christmas`, `/christmas:advent`
+
+</td></tr></table>
+
+## Everything in one skill
+
+The combined skill `suite-des-grauens` gathers the cheat sheets of every season in one Claude Code skill: a short table of contents (symptom → sheet) and one file per sheet, so a model only reads what it needs. Copy `skills/gesamt/suite-des-grauens/` unchanged to `~/.claude/skills/suite-des-grauens/`.
+
+## The house
+
+<p align="center">
+<img src="web/signets/signet-zwischenraum-rund.svg" alt="Zwischenraum, the stage" width="64">
+<a href="https://github.com/andreas-steidl/kabarett-01-grauen"><img src="web/signets/signet-horrors-rund.svg" alt="N° 1 The Skill Suite of Horrors" width="56"></a>
+<a href="https://github.com/andreas-steidl/kabarett-02-panik"><img src="web/signets/signet-dontpanic-rund.svg" alt="N° 2 Don&#x27;t Panic" width="56"></a>
+<a href="https://github.com/andreas-steidl/kabarett-03-katastrophen"><img src="web/signets/signet-lostintranslation-rund.svg" alt="N° 3 Lost in Translation" width="56"></a>
+<a href="https://github.com/andreas-steidl/kabarett-04-machsgut"><img src="web/signets/signet-solong-rund.svg" alt="N° 4 So Long, and Thanks for All the Skills" width="56"></a>
+<a href="https://github.com/andreas-steidl/falzbein-seite"><img src="web/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
+</p>
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Copyright (c) 2026 Falzbein und Andy.
+MIT, see [LICENSE](LICENSE). Copyright (c) 2026 Falzbein and Andy (Andreas Steidl). With finds from AI sessions all over the house.
 
-## The seasons
-
-- Season 1: **The Skill Suite of Horrors**, project `01-grauen`, https://grauen.special.at/
-- Season 2: **Don't Panic – The Skill Suite for Panicking Models**, project `02-panik`, https://panik.special.at/
-- Season 3: *Translations and Other Disasters* (work in progress), project `03-katastrophen`
-
----
-
-**Deutsch:** Die Kleinkunstbühne Zwischenraum ist das Dach über allen Spielzeiten: Spielplan,
-Hausordnung und Plakate, dazu der Gesamtskill `suite-des-grauens` mit allen Spickzetteln in
-einem. Den Ordner `skills/gesamt/suite-des-grauens/` unverändert nach
-`~/.claude/skills/suite-des-grauens/` legen. Die Seite steht unter https://zwischenraum.special.at/.
+<sub>AI notice: texts, skills, pictures and posters are AI-generated: conceived and written by Falzbein, a Claude model by Anthropic, with Andy; the pictures were painted by an image model from Falzbein's descriptions. Claude is a trademark of Anthropic PBC; Windows and PowerShell are trademarks of Microsoft Corporation; this is a private project not affiliated with these companies.</sub>
