@@ -12,3 +12,6 @@
 .gitignore
 Thumbs.db
 UPLOAD_AUSSCHLUSS.txt
+
+# Unsignierte Fassung der Mod (13.11.2026): der Download kommt signiert aus dem Katalog auf special.at
+christmas.zip
