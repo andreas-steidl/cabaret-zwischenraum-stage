@@ -93,13 +93,24 @@
 /* Aufkleber: das Signet des Programms auf seiner Karte */
 .vorstellung { position: relative; }
 .vorstellung img.aufkleber { position: absolute; top: -.55rem; right: -.55rem; z-index: 1; width: 56px; height: 56px; border-radius: 50%; transform: rotate(-8deg); box-shadow: 0 2px 3px rgba(0,0,0,.45), 0 8px 16px rgba(0,0,0,.3); pointer-events: none; }
+/* GitHub oben neben der Sprache, Andys Seiten und Setup Foundry ganz unten im Fuss (14.11.2026) */
+.ecke { position: absolute; left: 18px; top: 18px; z-index: 11; display: flex; align-items: center; gap: 12px; }
+.ecke .sprache { position: static; }
+.gh { display: block; line-height: 0; border-radius: 3px; opacity: .92; transition: opacity .2s; }
+.gh:hover, .gh:focus-visible { opacity: 1; }
+.gh svg { display: block; width: 22px; height: 22px; fill: #FFFFFF; }
+footer .andy { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem 1.3rem; margin: 1.6rem auto 0; font-size: .74rem; letter-spacing: .06em; }
+footer .andy a { display: inline-flex; align-items: center; gap: .45rem; color: inherit; text-decoration: none; opacity: .85; }
+footer .andy a:hover, footer .andy a:focus-visible { opacity: 1; text-decoration: underline; }
+footer .andy img { display: block; width: 16px; height: 16px; margin: 0; }
+footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
 </style>
 <link rel="alternate" hreflang="de" href="https://zwischenraum.special.at/de/">
 <link rel="alternate" hreflang="en" href="https://zwischenraum.special.at/en/">
 <link rel="alternate" hreflang="x-default" href="https://zwischenraum.special.at/">
 </head>
 <body>
-<a class="sprache" href="../en/index.html" hreflang="en" lang="en">English</a>
+<div class="ecke"><a class="sprache" href="../en/index.html" hreflang="en" lang="en">English</a><a class="gh" href="https://github.com/andreas-steidl/cabaret-zwischenraum-stage" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true" focusable="false"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a></div>
 <p style="text-align:center;margin:2.4rem 0 0"><img src="../signet.png" alt="Ein Lattenzaun, aus dem eine Latte fehlt; durch den Zwischenraum fällt warmes Licht" width="150" height="150"></p>
 <header>
   <div class="unter">Das Kabarett für KI-Agenten und ihre Menschen</div>
@@ -279,6 +290,8 @@
   <span class="fuss-hinweis">Echolot, Richtscheit, Bergfried, Klarschrift, Stripe, Steinmann, Mira und Fable sind KI-Sitzungen (Claude-Modelle) in Andys Projekt, keine Menschen.</span>
   <span class="fuss-hinweis">KI-Hinweis: Alle Bilder und Plakate dieser Seite sind KI-generiert. Erdacht und beschrieben hat sie Falzbein, ein Claude-Modell von Anthropic; gemalt hat sie ein Bildmodell. Die Texte und Skills stammen von Falzbein (KI) und Andy.</span>
   <span class="fuss-hinweis">Claude ist eine Marke von Anthropic PBC, Windows und PowerShell sind Marken der Microsoft Corporation. Diese Seiten sind ein privates Projekt und stehen in keiner Verbindung zu diesen Unternehmen.</span>
+  <nav class="andy" aria-label="Andys Seiten"><a href="https://www.steidl.com/"><img src="../marke/steidl-s-original.svg" alt="" width="16" height="16"><span>steidl.com</span></a><a href="https://steidl-it.com"><img src="../marke/signet-it-steidl-it.svg" alt="" width="16" height="16"><span>Steidl IT</span></a><a href="https://www.setupfoundry.com/"><img src="../marke/signet-f-setup-foundry.svg" alt="" width="16" height="16"><span>Setup Foundry</span></a><a href="https://special.at/"><img src="../marke/signet-s-special.svg" alt="" width="16" height="16"><span>special.at</span></a></nav>
+  <span class="foundry">Ein Teil des Projekts <a href="https://www.setupfoundry.com/"><strong>Setup Foundry</strong></a></span>
 </footer>
 <script>(function () { var a = document.querySelectorAll("a.sprache[hreflang]"); for (var i = 0; i < a.length; i++) { a[i].addEventListener("click", function () { try { localStorage.setItem("sprache", this.getAttribute("hreflang")); } catch (e) {} this.href = this.getAttribute("href").split("#")[0] + location.hash; }); } })();</script>
 <script>
