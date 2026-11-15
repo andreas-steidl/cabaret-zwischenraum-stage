@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zwischenraum.special.at/sitemap.xml
