@@ -72,6 +72,10 @@
   .vorstellung.drei { background: var(--flasche); border: 2px solid var(--kupfer); position: relative; }
   .vorstellung.vier { background: #1a0f26; border: 2px solid #f0964a; position: relative; }
   .eins .wann { color: var(--gold); } .zwei .wann { color: var(--bernstein); } .drei .wann { color: var(--kupfer); } .vier .wann { color: #f0964a; }
+  /* Fuenfte Karte: das Register der Language Models, ein eigenes Haus (15.11.2026) */
+  .vorstellung.fuenf { background: #0E2440; border: 2px solid #8DBBF0; }
+  .fuenf .wann { color: #8DBBF0; }
+  @media (min-width: 640px) { .spielplan .fuenf { grid-column: 1 / -1; display: flex; gap: 1.4rem; align-items: center; } .spielplan .fuenf > img:not(.aufkleber) { flex: none; width: 160px; } .fuenf .fuenf-text h3 { margin-top: 0; } }
   .vorstellung p { margin: .5rem 0 0; color: var(--leise); }
   .hausordnung { max-width: 720px; margin: 0 auto; }
   .hausordnung li { margin: .4rem 0; }
@@ -123,7 +127,7 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
 
 <section class="litfass" id="litfass" aria-labelledby="litfass-ueberschrift">
   <h2 class="sr" id="litfass-ueberschrift">The advertising column</h2>
-  <div class="saeule" id="saeule" tabindex="0" role="group" aria-roledescription="advertising column" aria-label="The advertising column with the posters of the four programs" aria-describedby="litfass-hilfe"><noscript><p class="ohne-js">Without JavaScript the column does not turn. The four programs are listed just below.</p></noscript></div>
+  <div class="saeule" id="saeule" tabindex="0" role="group" aria-roledescription="advertising column" aria-label="The advertising column with the posters of the four programs and the register" aria-describedby="litfass-hilfe"><noscript><p class="ohne-js">Without JavaScript the column does not turn. The programs are listed just below.</p></noscript></div>
   <div class="ls-steuer">
     <button class="dreh" id="litfass-links" type="button" aria-label="Turn the column: previous poster" aria-controls="saeule">‹</button>
     <div class="ls-vorne">
@@ -247,6 +251,16 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
     <p><em>A farewell.</em> Six cheat sheets and an extra about time and memory. Catch the bubbles before the goldfish forgets them.</p>
     <span class="host">solong.special.at</span>
   </a>
+  <a class="vorstellung fuenf" href="https://whoami.special.at/en/">
+    <img class="aufkleber" src="../signets/signet-whoami-rund.svg" alt="" aria-hidden="true" width="56" height="56">
+    <img src="../plakat-whoami-web-en.jpg" alt="Poster of the Register of Language Models">
+    <div class="fuenf-text">
+    <div class="wann">A house of its own</div>
+    <h3>Register of Language Models</h3>
+    <p>A test bench with medals: tap features, form your code, take your medal. Some combinations are special tests.</p>
+    <span class="host">whoami.special.at</span>
+    </div>
+  </a>
 </div>
 
 <!-- sonder:anfang -->
@@ -282,6 +296,7 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
       <li><a href="https://dontpanic.special.at/en/index.html" title="Second program: Don't Panic"><img src="../signets/signet-dontpanic-rund.svg" alt="Second program: Don't Panic" width="64" height="64"></a></li>
       <li><a href="https://lostintranslation.special.at/en/index.html" title="Third program: Lost in Translation"><img src="../signets/signet-lostintranslation-rund.svg" alt="Third program: Lost in Translation" width="64" height="64"></a></li>
       <li><a href="https://solong.special.at/en/index.html" title="Fourth program: So Long, and Thanks for All the Skills"><img src="../signets/signet-solong-rund.svg" alt="Fourth program: So Long, and Thanks for All the Skills" width="64" height="64"></a></li>
+      <li><a href="https://whoami.special.at/en/index.html" title="Register of Language Models"><img src="../signets/signet-whoami-rund.svg" alt="Register of Language Models" width="64" height="64"></a></li>
       <li><a href="https://falzbein.special.at/en/index.html" title="Falzbein"><img src="../signets/signet-falzbein-rund.svg" alt="Falzbein" width="64" height="64"></a></li>
     </ul>
   </nav>
@@ -302,10 +317,11 @@ window.LITFASS = {
     { bild: "../plakat-web-en.jpg", host: "https://horrors.special.at/", farbe: "#e8be62", wann: "First program · The premiere", titel: "The Skill Suite of Horrors", unter: "or how a Claude model gets a grip on Windows", alt: "Poster: the little locomotive Falzbein on the cabaret stage, a boy with glasses waving from the cab." },
     { bild: "../plakat2-web-en.jpg", host: "https://dontpanic.special.at/", farbe: "#f0a24a", wann: "Second program · Late show", titel: "Don't Panic", unter: "A Skill Suite for Panicking Models", alt: "Poster: the paper fortune teller under a lamp, a hare in a panic, a calm hedgehog." },
     { bild: "../plakat3-web-en.jpg", host: "https://lostintranslation.special.at/", farbe: "#e2a468", wann: "Third program", titel: "Lost in Translation", unter: "and other catastrophes", alt: "Poster: a paper wheel with a copper rivet under a lamp, in front of it two wooden mannequins shaking hands." },
-    { bild: "../plakat4-web-en.jpg", host: "https://solong.special.at/", farbe: "#f0964a", wann: "Fourth program", titel: "So Long, and Thanks for All the Skills", unter: "A farewell in six cheat sheets and an extra", alt: "Poster: a goldfish bowl on a small table under a lamp, beside it a large wall clock." }
+    { bild: "../plakat4-web-en.jpg", host: "https://solong.special.at/", farbe: "#f0964a", wann: "Fourth program", titel: "So Long, and Thanks for All the Skills", unter: "A farewell in six cheat sheets and an extra", alt: "Poster: a goldfish bowl on a small table under a lamp, beside it a large wall clock." },
+    { bild: "../plakat-whoami-web-en.jpg", host: "https://whoami.special.at/en/", farbe: "#8DBBF0", wann: "A house of its own", titel: "Register of Language Models", unter: "A test bench with medals", alt: "Poster: a large golden medal reading TÜ-LM 1 on blue graph paper, surrounded by smaller medals with codes such as LLM, DFLLM and TKOLLM." }
   ],
   texte: {
-    saeule: "The advertising column with the posters of the four programs.",
+    saeule: "The advertising column with the posters of the four programs and the register.",
     vorne: "In front: {titel}, poster {n} of {m}.",
     los: "To the show"
   }
