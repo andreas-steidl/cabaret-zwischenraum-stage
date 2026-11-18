@@ -1,6 +1,7 @@
 <!-- signets:anfang -->
 <p align="right">
 <a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" title="Kleinkunstbühne Zwischenraum" width="30"></a>
+<a href="https://regal.special.at/"><img src=".github/readme/signets/signet-regal-rund.svg" alt="Das Regal" title="Das Regal" width="30"></a>
 <a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" title="Erstes Programm: Die Skill-Suite des Grauens" width="30"></a>
 <a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" title="Zweites Programm: Die Skillsuite für panische Modelle" width="30"></a>
 <a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" title="Drittes Programm: Übersetzungen und andere Katastrophen" width="30"></a>
@@ -53,6 +54,7 @@ Der Gesamtskill `suite-des-grauens` sammelt die Spickzettel aller Spielzeiten in
 
 <p align="center">
 <a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
+<a href="https://regal.special.at/"><img src=".github/readme/signets/signet-regal-rund.svg" alt="Das Regal" width="56"></a>
 <a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="56"></a>
 <a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="56"></a>
 <a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="56"></a>
