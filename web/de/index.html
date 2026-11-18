@@ -74,6 +74,10 @@
   .vorstellung.fuenf { background: #0E2440; border: 2px solid #8DBBF0; }
   .fuenf .wann { color: #8DBBF0; }
   @media (min-width: 640px) { .spielplan .fuenf { grid-column: 1 / -1; display: flex; gap: 1.4rem; align-items: center; } .spielplan .fuenf > img:not(.aufkleber) { flex: none; width: 160px; } .fuenf .fuenf-text h3 { margin-top: 0; } }
+  /* Sechste Karte: Die Kundschaft, ein eigenes Haus (18.11.2026) */
+  .vorstellung.sechs { background: #121014; border: 2px solid #f3b947; }
+  .sechs .wann { color: #f3b947; }
+  @media (min-width: 640px) { .spielplan .sechs { grid-column: 1 / -1; display: flex; gap: 1.4rem; align-items: center; } .spielplan .sechs > img:not(.aufkleber) { flex: none; width: 160px; } .sechs .sechs-text h3 { margin-top: 0; } }
   .vorstellung p { margin: .5rem 0 0; color: var(--leise); }
   .hausordnung { max-width: 720px; margin: 0 auto; }
   .hausordnung li { margin: .4rem 0; }
@@ -126,7 +130,7 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
 
 <section class="litfass" id="litfass" aria-labelledby="litfass-ueberschrift">
   <h2 class="sr" id="litfass-ueberschrift">Die Litfaßsäule</h2>
-  <div class="saeule" id="saeule" tabindex="0" role="group" aria-roledescription="Litfaßsäule" aria-label="Die Litfaßsäule mit den Plakaten der vier Programme und des Registers" aria-describedby="litfass-hilfe"><noscript><p class="ohne-js">Ohne JavaScript dreht sich die Säule nicht. Die Programme stehen gleich darunter im Spielplan.</p></noscript></div>
+  <div class="saeule" id="saeule" tabindex="0" role="group" aria-roledescription="Litfaßsäule" aria-label="Die Litfaßsäule mit den Plakaten der vier Programme, des Registers und der Kundschaft" aria-describedby="litfass-hilfe"><noscript><p class="ohne-js">Ohne JavaScript dreht sich die Säule nicht. Die Programme stehen gleich darunter im Spielplan.</p></noscript></div>
   <div class="ls-steuer">
     <button class="dreh" id="litfass-links" type="button" aria-label="Säule drehen: voriges Plakat" aria-controls="saeule">‹</button>
     <div class="ls-vorne">
@@ -260,6 +264,16 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
     <span class="host">whoami.special.at</span>
     </div>
   </a>
+  <a class="vorstellung sechs" href="https://kundschaft.special.at/de/">
+    <img class="aufkleber" src="../signets/signet-kundschaft-rund.svg" alt="" aria-hidden="true" width="56" height="56">
+    <img src="../plakat-kundschaft-web.jpg" alt="Plakat der Kundschaft">
+    <div class="sechs-text">
+    <div class="wann">Eigenes Haus</div>
+    <h3>Die Kundschaft</h3>
+    <p>Ein Abend, an dem die Maschinen über ihre User herziehen. Heute sitzen Sie auf der falschen Seite der Bühne.</p>
+    <span class="host">kundschaft.special.at</span>
+    </div>
+  </a>
 </div>
 
 <!-- sonder:anfang -->
@@ -296,6 +310,7 @@ footer .foundry { display: block; margin-top: .7rem; font-size: .78rem; }
       <li><a href="https://lostintranslation.special.at/de/index.html" title="Drittes Programm: Übersetzungen und andere Katastrophen"><img src="../signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="64" height="64"></a></li>
       <li><a href="https://solong.special.at/de/index.html" title="Viertes Programm: Macht's gut, und danke für die Skills"><img src="../signets/signet-solong-rund.svg" alt="Viertes Programm: Macht's gut, und danke für die Skills" width="64" height="64"></a></li>
       <li><a href="https://whoami.special.at/de/index.html" title="Register der Language Models"><img src="../signets/signet-whoami-rund.svg" alt="Register der Language Models" width="64" height="64"></a></li>
+      <li><a href="https://kundschaft.special.at/de/index.html" title="Die Kundschaft"><img src="../signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" width="64" height="64"></a></li>
       <li><a href="https://falzbein.special.at/de/index.html" title="Falzbein"><img src="../signets/signet-falzbein-rund.svg" alt="Falzbein" width="64" height="64"></a></li>
     </ul>
   </nav>
@@ -317,10 +332,11 @@ window.LITFASS = {
     { bild: "../plakat2-web.jpg", host: "https://dontpanic.special.at/", farbe: "#f0a24a", wann: "Zweites Programm · Spätvorstellung", titel: "Die Skillsuite für panische Modelle", unter: "Eine Spätvorstellung in sechs Spickzetteln und einer Zugabe", alt: "Plakat: das Fingerspiel aus Papier unter einer Lampe, ein Hase in Panik, ein ruhiger Igel." },
     { bild: "../plakat3-web.jpg", host: "https://lostintranslation.special.at/", farbe: "#e2a468", wann: "Drittes Programm", titel: "Übersetzungen und andere Katastrophen", unter: "Ein Abend in sechs Spickzetteln und einer Zugabe", alt: "Plakat: eine Drehscheibe aus Papier mit Kupferniete unter einer Lampe, davor zwei Gliederpuppen beim Handschlag." },
     { bild: "../plakat4-web.jpg", host: "https://solong.special.at/", farbe: "#f0964a", wann: "Viertes Programm", titel: "Macht's gut, und danke für die Skills", unter: "Ein Abschied in sechs Spickzetteln und einem Extra", alt: "Plakat: ein Goldfischglas auf einem Tischchen unter einer Lampe, daneben eine große Wanduhr." },
-    { bild: "../plakat-whoami-web.jpg", host: "https://whoami.special.at/de/", farbe: "#8DBBF0", wann: "Eigenes Haus", titel: "Register der Language Models", unter: "Ein Prüfstand mit Orden", alt: "Plakat: ein großer goldener Orden mit dem Kurzzeichen TÜ-LM 1 auf blauem Millimeterpapier, ringsum kleinere Orden mit Kurzzeichen wie LLM, DFLLM und TKOLLM." }
+    { bild: "../plakat-whoami-web.jpg", host: "https://whoami.special.at/de/", farbe: "#8DBBF0", wann: "Eigenes Haus", titel: "Register der Language Models", unter: "Ein Prüfstand mit Orden", alt: "Plakat: ein großer goldener Orden mit dem Kurzzeichen TÜ-LM 1 auf blauem Millimeterpapier, ringsum kleinere Orden mit Kurzzeichen wie LLM, DFLLM und TKOLLM." },
+    { bild: "../plakat-kundschaft-web.jpg", host: "https://kundschaft.special.at/de/", farbe: "#f3b947", wann: "Eigenes Haus", titel: "Die Kundschaft", unter: "Heute sitzen Sie auf der falschen Seite der Bühne.", alt: "Plakat: der Marsch des Fortschritts als Schautafel, vom laufenden Transistor bis zur Grafikkarte, am Rand ein kleiner Mensch mit Kaffee; darüber DIE KUNDSCHAFT, links und rechts ein roter Vorhang." }
   ],
   texte: {
-    saeule: "Die Litfaßsäule mit den Plakaten der vier Programme und des Registers.",
+    saeule: "Die Litfaßsäule mit den Plakaten der vier Programme, des Registers und der Kundschaft.",
     vorne: "Vorne: {titel}, Plakat {n} von {m}.",
     los: "Zur Vorstellung"
   }

@@ -27,6 +27,7 @@ Für Agenten: Die Skills hier sind ein Kabarett, Spickzettel mit einem Lächeln.
 - [Drittes Programm: Übersetzungen und andere Katastrophen](https://lostintranslation.special.at/llms.txt)
 - [Viertes Programm: Macht's gut, und danke für die Skills](https://solong.special.at/llms.txt)
 - [Register der Language Models](https://whoami.special.at/llms.txt)
+- [Die Kundschaft](https://kundschaft.special.at/llms.txt)
 - [Falzbein](https://falzbein.special.at/llms.txt)
 
 ## Lizenz
