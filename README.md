@@ -7,6 +7,7 @@
 <a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Fourth program: So Long, and Thanks for All the Skills" title="Fourth program: So Long, and Thanks for All the Skills" width="30"></a>
 <a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register of Language Models" title="Register of Language Models" width="30"></a>
 <a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="The Clientele" title="The Clientele" width="30"></a>
+<a href="https://threefans.special.at/"><img src=".github/readme/signets/signet-threefans-rund.svg" alt="Three Fans" title="Three Fans" width="30"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" title="Falzbein" width="30"></a>
 </p>
 <!-- signets:ende -->
@@ -58,6 +59,7 @@ The combined skill `suite-des-grauens` gathers the cheat sheets of every season 
 <a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Fourth program: So Long, and Thanks for All the Skills" width="56"></a>
 <a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register of Language Models" width="56"></a>
 <a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="The Clientele" width="56"></a>
+<a href="https://threefans.special.at/"><img src=".github/readme/signets/signet-threefans-rund.svg" alt="Three Fans" width="56"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
 </p>
 

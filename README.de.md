@@ -7,6 +7,7 @@
 <a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" title="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="30"></a>
 <a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" title="Register der Language Models" width="30"></a>
 <a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" title="Die Kundschaft" width="30"></a>
+<a href="https://threefans.special.at/"><img src=".github/readme/signets/signet-threefans-rund.svg" alt="Drei Lüfter" title="Drei Lüfter" width="30"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" title="Falzbein" width="30"></a>
 </p>
 <!-- signets:ende -->
@@ -58,6 +59,7 @@ Der Gesamtskill `suite-des-grauens` sammelt die Spickzettel aller Spielzeiten in
 <a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="56"></a>
 <a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" width="56"></a>
 <a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" width="56"></a>
+<a href="https://threefans.special.at/"><img src=".github/readme/signets/signet-threefans-rund.svg" alt="Drei Lüfter" width="56"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
 </p>
 
