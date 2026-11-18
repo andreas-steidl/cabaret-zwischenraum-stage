@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 *.vor-*.html
 Thumbs.db
+
+# Die Webseite liegt online (Mira laedt sie aus web/ hoch); seit 18.11.2026 nicht mehr im Repo (Andy)
+web/
