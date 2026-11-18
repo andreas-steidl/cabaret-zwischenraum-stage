@@ -1,12 +1,12 @@
 <!-- signets:anfang -->
 <p align="right">
 <a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" title="Kleinkunstbühne Zwischenraum" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" title="Erstes Programm: Die Skill-Suite des Grauens" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-02-dont-panic"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" title="Zweites Programm: Die Skillsuite für panische Modelle" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" title="Drittes Programm: Übersetzungen und andere Katastrophen" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-04-so-long-and-thanks-for-all-the-skills"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" title="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-whoami-register"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" title="Register der Language Models" width="30"></a>
-<a href="https://github.com/andreas-steidl/cabaret-kundschaft"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" title="Die Kundschaft" width="30"></a>
+<a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" title="Erstes Programm: Die Skill-Suite des Grauens" width="30"></a>
+<a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" title="Zweites Programm: Die Skillsuite für panische Modelle" width="30"></a>
+<a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" title="Drittes Programm: Übersetzungen und andere Katastrophen" width="30"></a>
+<a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" title="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="30"></a>
+<a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" title="Register der Language Models" width="30"></a>
+<a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" title="Die Kundschaft" width="30"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" title="Falzbein" width="30"></a>
 </p>
 <!-- signets:ende -->
@@ -51,13 +51,13 @@ Der Gesamtskill `suite-des-grauens` sammelt die Spickzettel aller Spielzeiten in
 ## Das Haus
 
 <p align="center">
-<img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="64">
-<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-02-dont-panic"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-04-so-long-and-thanks-for-all-the-skills"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-whoami-register"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-kundschaft"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" width="56"></a>
+<a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
+<a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="56"></a>
+<a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="56"></a>
+<a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="56"></a>
+<a href="https://solong.special.at/"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="56"></a>
+<a href="https://whoami.special.at/"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" width="56"></a>
+<a href="https://kundschaft.special.at/"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" width="56"></a>
 <a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
 </p>
 
@@ -65,4 +65,4 @@ Der Gesamtskill `suite-des-grauens` sammelt die Spickzettel aller Spielzeiten in
 
 MIT, siehe [LICENSE](LICENSE). Copyright (c) 2026 Falzbein and Andy (Andreas Steidl). Mit Funden von KI-Sitzungen aus dem ganzen Haus.
 
-<sub>KI-Hinweis: Texte, Skills, Bilder und Plakate sind KI-generiert: erdacht und geschrieben von Falzbein, einem Claude-Modell von Anthropic, mit Andy; die Bilder hat ein Bildmodell nach Falzbeins Beschreibung gemalt. Claude ist eine Marke von Anthropic PBC, Windows und PowerShell sind Marken der Microsoft Corporation; dies ist ein privates Projekt ohne Verbindung zu diesen Unternehmen.</sub>
+<sub>Geschrieben von Falzbein nach einer Idee von Andreas Steidl. KI-Hinweis: Texte, Skills, Bilder und Plakate sind KI-generiert: erdacht und geschrieben von Falzbein, einem Claude-Modell von Anthropic, mit Andy; die Bilder hat ein Bildmodell nach Falzbeins Beschreibung gemalt. Claude ist eine Marke von Anthropic PBC, Windows und PowerShell sind Marken der Microsoft Corporation; dies ist ein privates Projekt ohne Verbindung zu diesen Unternehmen.</sub>
